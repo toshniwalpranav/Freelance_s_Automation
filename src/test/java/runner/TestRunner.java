@@ -9,7 +9,11 @@ import Pages.LoginPage;
 import utils.DriverFactory;
 
 @CucumberOptions(
-        features = "src/test/resources/features",
+        features = {
+                "src/test/resources/features/1_Homepage.feature",
+                "src/test/resources/features/2_Registration.feature",
+                "src/test/resources/features/3_Login.feature"
+        },
         glue = {"stepdefinitions"},
         plugin = {
                 "pretty",

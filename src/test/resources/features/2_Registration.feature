@@ -10,6 +10,8 @@ Feature: Registration Form Details
     And the user selects "Reading" and "Swimming" from the "Hobbies" dropdown
     And the user scrolls down the page
     Then the "Sign up" button should be enabled
+    And the user clicks the "Sign up" button
+    
 
   Scenario: Male is selected as the default gender
     Then the "Male" gender radio button should be selected by default

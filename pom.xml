@@ -20,14 +20,7 @@
 
   <dependencies>
 
-    <!-- TestNG -->
-    <dependency>
-      <groupId>org.testng</groupId>
-      <artifactId>testng</artifactId>
-      <version>${testng.version}</version>
-      <scope>test</scope>
-    </dependency>
-
+  
     <!-- Cucumber core -->
     <dependency>
       <groupId>io.cucumber</groupId>
@@ -35,6 +28,15 @@
       <version>${cucumber.version}</version>
       <scope>test</scope>
     </dependency>
+    
+      <!-- TestNG -->
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>${testng.version}</version>
+      <scope>test</scope>
+    </dependency>
+
 
     <!-- Cucumber + TestNG integration -->
     <dependency>

@@ -4,11 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
 
 public class LoginPage {
-
     private final WebDriver driver;
     private final WebDriverWait wait;
 
@@ -29,5 +27,17 @@ public class LoginPage {
 
     public void clickNewUserSignUpLink() {
         wait.until(ExpectedConditions.elementToBeClickable(newUserSignUpLink)).click();
+    }
+
+    public void enterEmail(String email) {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(emailField)).sendKeys(email);
+    }
+
+    public void enterPassword(String password) {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(passwordField)).sendKeys(password);
+    }
+
+    public void clickSignIn() {
+        wait.until(ExpectedConditions.elementToBeClickable(signInButton)).click();
     }
 }

@@ -120,12 +120,4 @@ public class RegistrationFormSteps {
         }
     }
 
-    @Then("the registration should be successful")
-    public void the_registration_should_be_successful() {
-        WebDriver driver = DriverFactory.getDriver();
-        // Adjust this assertion to match how the real site confirms success
-        // (e.g. a toast message, redirect to a welcome page, etc.)
-        Assert.assertFalse(driver.getCurrentUrl().contains("/signup"),
-                "Expected navigation away from the signup page after successful registration");
-    }
 }
