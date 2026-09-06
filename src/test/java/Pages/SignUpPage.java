@@ -145,4 +145,4 @@ public class SignUpPage {
     public void scrollDown() {
         ((JavascriptExecutor) driver).executeScript("window.scrollBy(0, 400);");
     }
-}
+}	
